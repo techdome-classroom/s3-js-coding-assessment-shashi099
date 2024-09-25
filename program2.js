@@ -15,7 +15,6 @@ var romanToInt = function(s) {
     let total = 0;
 
     for (let i = 0; i < s.length; i++) {
-        // Get the value of the current Roman numeral
         let currentVal = romanMap[s[i]];
         
         let nextVal = romanMap[s[i + 1]];
