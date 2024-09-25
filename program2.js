@@ -21,7 +21,6 @@ var romanToInt = function(s) {
         // Get the value of the next Roman numeral (if it exists)
         let nextVal = romanMap[s[i + 1]];
         
-        // If the current value is less than the next value, we subtract it
         if (nextVal > currentVal) {
             total -= currentVal;
         } else {
