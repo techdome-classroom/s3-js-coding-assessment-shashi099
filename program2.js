@@ -18,7 +18,6 @@ var romanToInt = function(s) {
         // Get the value of the current Roman numeral
         let currentVal = romanMap[s[i]];
         
-        // Get the value of the next Roman numeral (if it exists)
         let nextVal = romanMap[s[i + 1]];
         
         if (nextVal > currentVal) {
