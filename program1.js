@@ -4,7 +4,7 @@
  */
 
 var isValid = function(s) { 
-    let st = [];
+    let st = []; 
 
         for (let i = 0; i < s.length; i++) {
             let ch = s.charAt(i);
