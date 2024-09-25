@@ -3,7 +3,7 @@
  * @return {boolean}
  */
 
-var isValid = function(s) {
+var isValid = function(s) { 
     let st = [];
 
         for (let i = 0; i < s.length; i++) {
