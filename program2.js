@@ -13,6 +13,24 @@ var romanToInt = function(s) {
         'M': 1000
     };
     let total = 0;
+
+    for (let i = 0; i < s.length; i++) {
+        // Get the value of the current Roman numeral
+        let currentVal = romanMap[s[i]];
+        
+        // Get the value of the next Roman numeral (if it exists)
+        let nextVal = romanMap[s[i + 1]];
+        
+        // If the current value is less than the next value, we subtract it
+        if (nextVal > currentVal) {
+            total -= currentVal;
+        } else {
+            total += currentVal;
+        }
+    }
+    
+    return total;
+
 };
 
 
